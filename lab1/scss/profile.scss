@@ -1,0 +1,221 @@
+$background-color: #eaf6e9;
+$header-bg: #0d1b1e;
+$card-bg: #0d1b1e;
+$trips-bg: #A2C7B3;
+$button-bg: #dbeedb;
+$button-hover-bg: #4d6654;
+$text-color: #caedd8;
+$button-text-color: #e0e0e0;
+$primary-font: Arial, sans-serif;
+$secondary-font: "Alata", sans-serif;
+$font-all: "Akatab", sans-serif;
+
+body {
+    font-family: $primary-font;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $header-bg;
+    color: white;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        padding: 10px 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+nav {
+    a {
+        color: white;
+        text-decoration: none;
+        margin-left: 15px;
+        font-family: $secondary-font;
+        font-size: 16px;
+
+        @media (max-width: 768px) {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    gap: 80px;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+.profile {
+    .card {
+        background: $card-bg;
+        color: white;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        width: 100%;
+        position: relative;
+
+        @media (max-width: 768px) {
+            padding: 20px;
+        }
+    }
+}
+
+.avatar {
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    span {
+        margin: 0 5px;
+        cursor: pointer;
+    }
+}
+.prof_img {
+  width: 25px;
+  margin-bottom: -5px;
+}
+.trips {
+    font-family: $font-all;
+    text-align: center;
+    background: $trips-bg;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+
+    h2 {
+        font-family: $font-all;
+        margin-top: 0;
+        font-size: 25px;
+
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
+    }
+}
+
+.trip-list {
+    font-family: $font-all;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    button {
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background: $button-bg;
+        border: none;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: $font-all;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.see-more {
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    background: $button-hover-bg;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+        padding: 6px 12px;
+    }
+}
+
+.more {
+    margin-top: 10px;
+    background: $button-hover-bg;
+    box-shadow: none;
+    border: none;
+}
+
+.card h2 {
+    font-size: 40px;
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
+}
+
+.text1 {
+    font-family: $font-all;
+    font-size: 18px;
+    color: $text-color;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.text12 {
+    margin-top: -30px;
+    font-size: 25px;
+    color: $text-color;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+.main_page_href {
+    text-decoration: none;
+    color: $button-text-color;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
+}

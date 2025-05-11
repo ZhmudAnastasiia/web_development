@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip To Go</title>
+    <link rel="stylesheet" href="./css/trip_list_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="main_page.html" class="main_page_href">TRIP TO GO</a></div>
+        <nav>
+            <a href="#">Start trip</a>
+            <a href="#">My trips</a>
+            <a href="login.html"><img src="assets/user.png" alt="prof_img" class="prof_img"> Log out </a>
+        </nav>
+    </header>
+    <main>
+        <div class="tabs">
+            <a href="#" class="active">All trips</a>
+            <a href="#">Active Trips</a>
+            <a href="#">Past Trips</a>
+            <a href="#add-trip" class="new-trip">New trip ➕</a>
+        </div>
+
+        <section class="trips">
+            <div class="section-title">Your trips</div>
+            <div class="trip-card">
+                <div class="image-placeholder"></div>
+                <div class="trip-info">
+                    <h3><a href="trip_details.html" class="trip_href">New Trip</a></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="trip-meta">
+                        <span class="tag">number of participations: <strong>12</strong></span>
+                        <span class="tag">start date: 12/02/2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section-title">Other’s trip</div>
+            <div class="trip-card">
+                <div class="image-placeholder"></div>
+                <div class="trip-info">
+                    <h3><a href="trip_details.html" class="trip_href">New Trip</a></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="trip-meta">
+                        <span class="tag">number of participations: <strong>12</strong></span>
+                        <span class="tag">start date: 12/02/2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="trip-card">
+                <div class="image-placeholder"></div>
+                <div class="trip-info">
+                    <h3><a href="trip_details.html" class="trip_href">New Trip</a></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="trip-meta">
+                        <span class="tag">number of participations: <strong>12</strong></span>
+                        <span class="tag">start date: 12/02/2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="add-trip" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">✖</a>
+            <h2>Add trip</h2>
+            <form>
+                <div class="form-group">
+                    <label for="trip-title">Title</label>
+                    <input type="text" id="trip-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="trip-desc">Description</label>
+                    <textarea id="trip-desc" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="trip-start">Start Date</label>
+                    <input type="date" id="trip-start" required>
+                </div>
+                <div class="form-group">
+                    <label for="trip-end">End Date</label>
+                    <input type="date" id="trip-end" required>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="button save">Save</button>
+                    <a href="#" class="button cancel">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

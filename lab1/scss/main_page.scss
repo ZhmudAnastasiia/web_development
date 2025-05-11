@@ -1,0 +1,194 @@
+$font-all: "Akatab", sans-serif;
+$font-main: Arial, sans-serif;
+$font-nav: 'Alata', sans-serif;
+$color-bg: #0d1f1e;
+$color-card: #122a2a;
+$color-white: white;
+$color-button: #7cc4a3;
+$color-button-text: black;
+$color-p: #97ADA1;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  font-family: $font-main;
+  background-color: $color-bg;
+  color: $color-white;
+}
+
+header {
+  background-image: url('/Веб/assets/beach.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    a {
+      font-family: $font-nav;
+      font-size: 16px;
+      color: $color-white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+  }
+
+  .hero {
+    font-family: $font-all;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 50px 50px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+    border-radius: 60px;
+    padding: 20px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 10%;
+
+  .card {
+    display: flex;
+    background: $color-card;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    width: 100%;
+
+    img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .text {
+      font-family: $font-all;
+      padding: 0 20px;
+      p{
+        color: $color-p;
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+
+  .start-trip {
+    text-decoration: none;
+    background-color: $color-button;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+
+    .start_href {
+      text-decoration: none;
+      color: $color-button-text;
+    }
+  }
+}
+
+.prof_img {
+  width: 25px;
+  margin-bottom: -5px;
+}
+
+
+@media (max-width: 600px) {
+  header {
+    .hero {
+      margin-top: 40px;
+      max-height: 50px;
+      font-size: 16px;
+      border-radius: 40px;
+      max-width: 60%;
+      background-color: none;
+      box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.5);
+      p{
+        margin-top: -20px;
+      }
+    }
+  }
+
+  .content {
+    padding: 30px 5%;
+
+    .card {
+      flex-direction: column;
+      text-align: center;
+
+      img {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+      }
+
+      .text {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .logo {
+      margin-bottom: 10px;
+    }
+
+    a {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+  }
+
+  header {
+    height: auto;
+    padding: 15px;
+  }
+
+  .start-trip {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .hero {
+
+      font-size: 14px;
+      padding: 10px;
+      border-radius: 20px;
+      max-width: 60%;
+      box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.4);
+    }
+}

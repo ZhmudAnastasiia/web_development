@@ -1,0 +1,324 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #eaf0e8;
+  color: #051B1B;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: #051B1B;
+  color: white;
+  box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.3);
+}
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+header nav a {
+  font-family: "Alata", sans-serif;
+  font-size: 16px;
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.tabs {
+  font-family: "Alata", sans-serif;
+  font-size: 16px;
+  margin-top: 50px;
+  margin-bottom: -25px;
+  display: flex;
+  gap: 25px;
+  padding-left: 27px;
+}
+.tabs a {
+  color: #3B5B49;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.trips {
+  background: #051B1B;
+  padding: 25px;
+  margin: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+  font-family: "Alata", sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #EAFFF3;
+  padding-bottom: 5px;
+  color: #EAFFF3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-trip {
+  font-family: "Alata", sans-serif;
+  margin-left: auto;
+  margin-right: 40px;
+  color: #3B5B49;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.trip-card {
+  display: flex;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  align-items: center;
+}
+.trip-card .image-placeholder {
+  width: 190px;
+  height: 115px;
+  background: #d0d6cc;
+  margin-right: 15px;
+}
+.trip-card .trip-info {
+  flex: 1;
+  color: #EAFFF3;
+}
+.trip-card .trip-info p {
+  font-family: "Alata", sans-serif;
+}
+.trip-card .trip-meta {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.trip-card .tag {
+  font-family: "Charis SIL", serif;
+  background: #BDF7D6;
+  padding: 6px 10px;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+.trip-card .delete {
+  background: none;
+  border: none;
+  color: #051B1B;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: auto;
+}
+
+.trip-details {
+  background-color: #eef9f1;
+  padding: 20px;
+  border-radius: 12px;
+  font-family: "Arial", sans-serif;
+  max-width: 400px;
+}
+.trip-details h1 {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.trip-details .status {
+  background-color: #0d1f16;
+  color: white;
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+.trip-details p {
+  font-size: 16px;
+  color: #333;
+  margin: 8px 0;
+}
+.trip-details .trip-details-span {
+  background-color: #a9cbb8;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #1f3b2b;
+}
+.trip-details .description {
+  font-size: 14px;
+  color: #333;
+  margin-top: 12px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+.modal.modal:target {
+  display: flex;
+}
+.modal .modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "Alata", sans-serif;
+}
+.modal .modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.modal .modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+.modal .modal-content .close:hover {
+  color: red;
+}
+.modal .modal-content .form-group {
+  margin-right: 15px;
+  text-align: left;
+  margin-bottom: 12px;
+}
+.modal .modal-content .form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.modal .modal-content .form-group input, .modal .modal-content .form-group textarea {
+  box-shadow: 2px 2px 2px rgb(90, 90, 90);
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  background: #eef7f1;
+  outline: none;
+}
+.modal .modal-content .form-group textarea {
+  height: 60px;
+  resize: none;
+}
+.modal .modal-content .button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.modal .modal-content .button-group .button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.modal .modal-content .button-group .cancel {
+  color: #051B1B;
+  background: #e0e0e0;
+}
+.modal .modal-content .button-group .save {
+  background: #b8e6c1;
+}
+
+.trip_href {
+  font-family: "Alata", sans-serif;
+  margin-left: auto;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.main_page_href {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.prof_img {
+  width: 25px;
+  margin-bottom: -5px;
+}
+
+@media (max-width: 1024px) {
+  .trip-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .trip-card .image-placeholder {
+    width: 250px;
+    height: 150px;
+    margin-bottom: 10px;
+    margin: auto;
+  }
+  .trip-card .delete {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+  .trip-details {
+    max-width: 100%;
+    padding: 15px;
+  }
+  .trip-details h1 {
+    font-size: 20px;
+  }
+  .trip-details p, .trip-details .description {
+    font-size: 14px;
+  }
+  .new-trip, .trip_href {
+    margin-right: 20px;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header nav {
+    margin-top: 10px;
+  }
+  header nav a {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+  }
+}
+@media (max-width: 600px) {
+  header .logo {
+    font-size: 18px;
+  }
+  .section-title {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+  }
+  .trip-card {
+    padding: 10px;
+  }
+  .trip-details h1 {
+    font-size: 18px;
+  }
+  .trip-details p, .trip-details .description {
+    font-size: 13px;
+  }
+  .trip-details .trip-details-span {
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=trip_list_styles.css.map */

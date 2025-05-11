@@ -1,0 +1,113 @@
+$font-main: 'Albert Sans', Arial, sans-serif;
+$color-bg: #AFCABA;
+$color-container: #2E4C42;
+$color-white: white;
+$color-lightgray: lightgray;
+$color-btn: #C6DBC4;
+$color-btn-hover: #A5C4A3;
+$color-placeholder: lightgray;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $color-bg;
+  font-family: $font-main;
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  background-color: $color-container;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+
+  h2 {
+    color: $color-white;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $color-white;
+    padding: 12px;
+    position: relative;
+
+    input {
+      flex: 1;
+      background: none;
+      border: none;
+      outline: none;
+      color: $color-white;
+      padding-left: 10px;
+      font-size: 16px;
+
+      &::placeholder {
+        color: $color-placeholder;
+      }
+    }
+
+    .icon {
+      color: $color-white;
+      width: 24px;
+      height: 24px;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 10px;
+      cursor: pointer;
+      color: $color-white;
+    }
+  }
+
+  .forgot-password {
+    display: block;
+    text-align: right;
+    color: $color-white;
+    font-size: 14px;
+    margin: 5px 0;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .btn {
+    background-color: $color-btn;
+    border: none;
+    padding: 12px;
+    width: 40%;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+      background-color: $color-btn-hover;
+    }
+  }
+
+  .login-link {
+    margin-top: 10px;
+    color: $color-white;
+    font-size: 14px;
+
+    a {
+      color: $color-white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
+
+img {
+  width: 30px;
+}
