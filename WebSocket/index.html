@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Чат</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <h2>Введіть ім’я користувача</h2>
+    <input id="usernameInput" type="text" placeholder="Ім’я користувача" />
+    <button onclick="connect()">Підключитись</button>
+  </div>
+</div>
+
+<div class="container" style="display: none;" id="chatContainer">
+  <div class="users-list">
+    <h3>👥 Онлайн</h3>
+    <div id="users"></div>
+  </div>
+  <div class="chat-container">
+    <div class="chat-header">Чат</div>
+    <div class="chat-messages" id="chat"></div>
+    <div class="input-area" id="inputArea">
+      <input id="messageInput" type="text" placeholder="Введіть повідомлення..." />
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
