@@ -182,6 +182,7 @@ main {
 }
 
 .sidebar div {
+  align-items: center;
   padding: 0;
   background: #a9cbb8;
   padding: 15px;
@@ -191,6 +192,13 @@ main {
 .part {
   padding: auto;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.participant {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
 }
 
 .tasks {

@@ -1,133 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trip To Go</title>
-    <link rel="stylesheet" href="./css/trip_details_styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Akatab:wght@400;500;600;700;800;900&family=Alata&family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/trip_details_styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akatab:wght@400;500;600;700;800;900&family=Alata&family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="logo"><a href="index.html" class="main_page_href">TRIP TO GO</a></div>
-        <nav>
-            <a href="#">Start trip</a>
-            <a href="trip_list.html">My trips</a>
-            <a href="login.html"><img src="./assets/user.png" alt="">Log out</a>
-        </nav>
+      <div class="logo">
+        <a href="index.html" class="main_page_href">TRIP TO GO</a>
+      </div>
+      <nav>
+        <a href="#">Start trip</a>
+        <a href="trip_list.html">My trips</a>
+        <a href="login.html"><img src="./assets/user.png" alt="" />Log out</a>
+      </nav>
     </header>
 
     <main>
-        <section class="trip-details">
-            <h1>New trip <span class="status">Active</span></h1>
-            <p><span class="trip-details-span">Start date:</span> 12/02/2024</p>
-            <p><span class="trip-details-span">End date:</span> 12/02/2024</p>
-            <p class="head_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </section>
-        <div class="act">
-            <div class="trip-actions">
-                <a href="#" class="chat-link">Trip chat`s link</a>
-                <button class="export-btn">Export PDF</button>
+      <section class="trip-details">
+        <h1>New trip <span class="status">Active</span></h1>
+        <p><span class="trip-details-span">Start date:</span> 12/02/2024</p>
+        <p><span class="trip-details-span">End date:</span> 12/02/2024</p>
+        <p class="head_description">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </section>
+      <div class="act">
+        <div class="trip-actions">
+          <a href="#" class="chat-link">Trip chat`s link</a>
+          <button class="export-btn">Export PDF</button>
+        </div>
+        <div class="image-placeholder"></div>
+      </div>
+
+      <section class="events">
+        <div class="event-card">
+          <div>
+            <h2>New event</h2>
+            <h4>11/12/2024</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="event-info">
+            <p>Time: 12.00</p>
+            <div class="event-actions">
+              <button class="edit">
+                <img src="assets/edit-pictogram.png" alt="edit" />
+              </button>
+              <button class="delete">
+                <img
+                  src="assets/rubbish-bin-pictogram.png"
+                  alt="rubbish-bin-pictogram"
+                />
+              </button>
             </div>
-            <div class="image-placeholder"></div>
+          </div>
         </div>
 
-        <section class="events">
-
-            <div class="event-card">
-                <div>
-                    <h2>New event</h2>
-                    <h4>11/12/2024</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="event-info">
-                    <p>Time: 12.00</p>
-                    <div class="event-actions">
-                        <button class="edit"><img src="assets/edit-pictogram.png" alt="edit"></button>
-                        <button class="delete"><img src="assets/rubbish-bin-pictogram.png" alt="rubbish-bin-pictogram"></button>
-                    </div>
-                </div>
+        <div class="event-card">
+          <div>
+            <h2>New event</h2>
+            <h4>11/12/2024</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+          <div class="event-info">
+            <p>Time: 12.00</p>
+            <div class="event-actions">
+              <button class="edit">
+                <img src="assets/edit-pictogram.png" alt="edit" />
+              </button>
+              <button class="delete">
+                <img
+                  src="assets/rubbish-bin-pictogram.png"
+                  alt="rubbish-bin-pictogram"
+                />
+              </button>
             </div>
+          </div>
+        </div>
 
-            <div class="event-card">
-                <div>
-                    <h2>New event</h2>
-                    <h4>11/12/2024</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="event-info">
-                    <p>Time: 12.00</p>
-                    <div class="event-actions">
-                        <button class="edit"><img src="assets/edit-pictogram.png" alt="edit"></button>
-                        <button class="delete"><img src="assets/rubbish-bin-pictogram.png" alt="rubbish-bin-pictogram"></button>
-                    </div>
-                </div>
-            </div>
+        <label for="open-modal" class="add-event">Add event</label>
 
+        <input type="checkbox" id="open-modal" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-content">
+            <form action="#" method="POST" class="add-event-form">
+              <h3>Add New Event</h3>
 
-            <label for="open-modal" class="add-event">Add event</label>
-
-<input type="checkbox" id="open-modal" class="modal-toggle">
-<div class="modal">
-    <div class="modal-content">
-        <form action="#" method="POST" class="add-event-form">
-            <h3>Add New Event</h3>
-
-            <div class="form-group">
+              <div class="form-group">
                 <label for="event-name">Event Name:</label>
-                <input type="text" id="event-name" name="event-name" required class="input">
-            </div>
+                <input
+                  type="text"
+                  id="event-name"
+                  name="event-name"
+                  required
+                  class="input"
+                />
+              </div>
 
-            <div class="form-group">
+              <div class="form-group">
                 <label for="event-date">Event Date:</label>
-                <input type="date" id="event-date" name="event-date" required class="input">
-            </div>
+                <input
+                  type="date"
+                  id="event-date"
+                  name="event-date"
+                  required
+                  class="input"
+                />
+              </div>
 
-            <div class="form-group">
+              <div class="form-group">
                 <label for="event-time">Event Time:</label>
-                <input type="time" id="event-time" name="event-time" required class="input">
-            </div>
+                <input
+                  type="time"
+                  id="event-time"
+                  name="event-time"
+                  required
+                  class="input"
+                />
+              </div>
 
-            <div class="form-group">
+              <div class="form-group">
                 <label for="event-description">Event Description:</label>
-                <textarea id="event-description" name="event-description" required class="input"></textarea>
-            </div>
+                <textarea
+                  id="event-description"
+                  name="event-description"
+                  required
+                  class="input"
+                ></textarea>
+              </div>
 
-            <div class="button-group">
+              <div class="button-group">
                 <button type="submit" class="button save">Add Event</button>
                 <label for="open-modal" class="button cancel">Close</label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="part">
+          <div class="participants">
+            <div>
+              <h3 class="centered">Participations</h3>
             </div>
-        </form>
-    </div>
-</div>
-
-        </section>
-
-
-
-        <aside class="sidebar">
-            <div class="part">
-                <div class="participants">
-                    <div>
-                        <h3 class="centered">Participations</h3>
-                    </div>
-                    <a href="profile.html" class="profile_href"><p class="participant">
-                        <img src="assets/image.png" alt="avatar" class="avatar">
-                        Participants Name
-                    </p></a>
-                    <a href="profile.html" class="profile_href"><p class="participant">
-                        <img src="assets/image.png" alt="avatar" class="avatar">
-                        Participants Name
-                    </p></a>
-                    <a href="profile.html" class="profile_href"><p class="participant">
-                        <img src="assets/image.png" alt="avatar" class="avatar">
-                        Participants Name
-                    </p></a>
-                </div>
-            </div>
-        </aside>
+            <a href="profile.html" class="profile_href">
+              <div class="participant">
+                <img src="assets/image.png" alt="avatar" class="avatar" />
+                <span>Participants Name</span>
+              </div>
+            </a>
+            <a href="profile.html" class="profile_href">
+              <div class="participant">
+                <img src="assets/image.png" alt="avatar" class="avatar" />
+                <span>Participants Name</span>
+              </div>
+            </a>
+            <a href="profile.html" class="profile_href">
+              <div class="participant">
+                <img src="assets/image.png" alt="avatar" class="avatar" />
+                <span>Participants Name</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </aside>
     </main>
-</body>
+  </body>
 </html>

@@ -8,12 +8,6 @@ $color-button: #7cc4a3;
 $color-button-text: black;
 $color-p: #97ADA1;
 
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 body {
   margin: 0;
   font-family: $font-main;
